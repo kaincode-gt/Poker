@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace xxx.Properties
+namespace WpfPoker.Properties
 {
 
 

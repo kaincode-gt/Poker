@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76FF5A68-6271-415D-9A3B-2F36578CA8BD}</ProjectGuid>
+    <ProjectGuid>{8BC5759A-189D-45CE-A581-CB7896BD2DB2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>xxx</RootNamespace>
-    <AssemblyName>xxx</AssemblyName>
+    <RootNamespace>WpfPoker</RootNamespace>
+    <AssemblyName>WpfPoker</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,6 +63,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Clases\DatosPartidaWPF.cs" />
+    <Compile Include="Clases\JugadorWPF_IA.cs" />
+    <Compile Include="Clases\JugadorWPF.cs" />
+    <Compile Include="Clases\Mensajeador.cs" />
+    <Compile Include="Clases\ObservableObject.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -93,6 +98,71 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagen\Cartas\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Poker\Poker.csproj">
+      <Project>{dcc53fe9-42c3-4c48-9b75-ed44a2bb266c}</Project>
+      <Name>Poker</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagen\Cartas\00.png" />
+    <Resource Include="Imagen\Cartas\01.png" />
+    <Resource Include="Imagen\Cartas\02.png" />
+    <Resource Include="Imagen\Cartas\03.png" />
+    <Resource Include="Imagen\Cartas\04.png" />
+    <Resource Include="Imagen\Cartas\05.png" />
+    <Resource Include="Imagen\Cartas\06.png" />
+    <Resource Include="Imagen\Cartas\07.png" />
+    <Resource Include="Imagen\Cartas\08.png" />
+    <Resource Include="Imagen\Cartas\09.png" />
+    <Resource Include="Imagen\Cartas\10.png" />
+    <Resource Include="Imagen\Cartas\11.png" />
+    <Resource Include="Imagen\Cartas\12.png" />
+    <Resource Include="Imagen\Cartas\13.png" />
+    <Resource Include="Imagen\Cartas\14.png" />
+    <Resource Include="Imagen\Cartas\15.png" />
+    <Resource Include="Imagen\Cartas\16.png" />
+    <Resource Include="Imagen\Cartas\17.png" />
+    <Resource Include="Imagen\Cartas\18.png" />
+    <Resource Include="Imagen\Cartas\19.png" />
+    <Resource Include="Imagen\Cartas\20.png" />
+    <Resource Include="Imagen\Cartas\21.png" />
+    <Resource Include="Imagen\Cartas\22.png" />
+    <Resource Include="Imagen\Cartas\23.png" />
+    <Resource Include="Imagen\Cartas\24.png" />
+    <Resource Include="Imagen\Cartas\25.png" />
+    <Resource Include="Imagen\Cartas\26.png" />
+    <Resource Include="Imagen\Cartas\27.png" />
+    <Resource Include="Imagen\Cartas\29.png" />
+    <Resource Include="Imagen\Cartas\30.png" />
+    <Resource Include="Imagen\Cartas\31.png" />
+    <Resource Include="Imagen\Cartas\32.png" />
+    <Resource Include="Imagen\Cartas\33.png" />
+    <Resource Include="Imagen\Cartas\34.png" />
+    <Resource Include="Imagen\Cartas\35.png" />
+    <Resource Include="Imagen\Cartas\36.png" />
+    <Resource Include="Imagen\Cartas\37.png" />
+    <Resource Include="Imagen\Cartas\38.png" />
+    <Resource Include="Imagen\Cartas\39.png" />
+    <Resource Include="Imagen\Cartas\40.png" />
+    <Resource Include="Imagen\Cartas\41.png" />
+    <Resource Include="Imagen\Cartas\42.png" />
+    <Resource Include="Imagen\Cartas\43.png" />
+    <Resource Include="Imagen\Cartas\44.png" />
+    <Resource Include="Imagen\Cartas\45.png" />
+    <Resource Include="Imagen\Cartas\46.png" />
+    <Resource Include="Imagen\Cartas\47.png" />
+    <Resource Include="Imagen\Cartas\48.png" />
+    <Resource Include="Imagen\Cartas\49.png" />
+    <Resource Include="Imagen\Cartas\50.png" />
+    <Resource Include="Imagen\Cartas\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagen\Cartas\card_back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
